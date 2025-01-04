@@ -76,7 +76,7 @@ const Hero = () => {
     })
 
 
-    const getVideoSrc = (index) => `videos/hero-${index}.mp4`
+    const getVideoSrc = (index) => `videos/Hero-${index}.webm`
 
     return (
         <div id='home' className='relative h-dvh w-screen overflow-x-hidden'>
@@ -117,7 +117,7 @@ const Hero = () => {
                     />
 
                     <video
-                        src={getVideoSrc(currentIndex === totalVideos - 1 ? 1 : currentIndex)}
+                        src={getVideoSrc(currentIndex === totalVideos - 1 ? 0 : currentIndex)}
                         autoPlay
                         loop
                         muted

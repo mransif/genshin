@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from './Button'
+import Magnet from './Magnet'
 
 const ImageClipBox = ({ src, clipClass }) => (
     <div className={clipClass}>
@@ -29,8 +30,10 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col items-center text-center">
                     <p className='font-general text-[10px] uppercase'>Join us</p>
-                    <p className='special-font mt-10 w-full z-20 font-zentry text-5xl leading-[0.9] md:text-[6rem]'>Lets <b>buil</b>d the <br /> <b>n</b>ew era  <b>of</b> <br/> gaming  tog<b>e</b>ther</p>
-                    <Button title='Contact us' containerClass='mt-10 cursor-pointer' />
+                    <p className='special-font mt-10 w-full z-20 font-zentry text-5xl leading-[0.9] md:text-[6rem]'>Lets <b>buil</b>d the <br /> <b>n</b>ew era  <b>of</b> <br /> gaming  tog<b>e</b>ther</p>
+                    <Magnet padding={30} disabled={false}>
+                        <Button title='Contact us' containerClass='mt-10 cursor-pointer' link='https://github.com/Kenz8489' />
+                    </Magnet>
                 </div>
             </div>
         </div>

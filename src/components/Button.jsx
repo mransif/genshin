@@ -2,7 +2,7 @@ import React from 'react'
 
 const Button = ({ title, id, rightIcon, leftIcon, containerClass, link }) => {
     return (
-        <a href={link}>
+        <a href={link} target='_blank'>
             <button
                 className={`group inline-flex relative z-10 q-fit cursor-pointer overflow-hidden rounded-full bg-violet-50 px-7 py-3 text-black ${containerClass}`}>
                 {leftIcon}

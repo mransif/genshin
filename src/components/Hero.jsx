@@ -3,8 +3,8 @@ import Button from './Button'
 import { TiLocationArrow } from 'react-icons/ti'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
-
 import { ScrollTrigger } from 'gsap/all'
+import Magnet from './Magnet'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -131,7 +131,9 @@ const Hero = () => {
                     <div className='mt-16 px-5 sm:px-10'>
                         <h1 className='special-font hero-heading text-blue-100 '><b>genshi</b>n</h1>
                         <p className='mb-5 max-w-64 font-robert-regular text-blue-100'>Master the Elements<br />Shape Your Fate</p>
-                        <Button id='watch-trailer' title="Watch Trailer" leftIcon={<TiLocationArrow />} containerClass='!bg-orange-300 flex-center gap-1 ' />
+                        <Magnet padding={50} disabled={false}>
+                            <Button id='watch-trailer' title="Watch Trailer" leftIcon={<TiLocationArrow />} containerClass='!bg-orange-300 flex-center gap-1 ' />
+                        </Magnet>
                     </div>
                 </div>
             </div>

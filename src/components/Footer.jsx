@@ -8,7 +8,6 @@ const links = [
     { href: 'https://www.facebook.com/Genshinimpact', icon: <FaFacebook /> }
 
 ]
-
 const Footer = () => {
     return (
         <div className="h-screen relative" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }}>
@@ -16,7 +15,7 @@ const Footer = () => {
                 <div className="text-white absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2  sm:-translate-y-3/4">
                     <h1 className='text-[18vw] bg-gradient-to-r from-white to-[#565656] bg-clip-text font-circular-web tracking-tight'>HoYoLab</h1>
                 </div>
-                <footer className='w-screen bg-violet-300 py-4 text-black  '>
+                <footer className='w-screen bg-violet-300 py-4 text-black h-1/4 '>
                     <div className="container mx-auto rounded-lg flex flex-col items-center justify-between gap-4 md:flow-row">
                         <p className='text-center text-sm md:text-left'>
                             &copy; HoYoVerse 2025. All right reserved

@@ -3,6 +3,7 @@ import { TiLocationArrow } from 'react-icons/ti'
 import Button from './Button'
 import { useWindowScroll } from 'react-use'
 import gsap from 'gsap'
+import Magnet from './Magnet'
 
 const navItems = ['Home', 'Vault', 'About', 'Contact']
 
@@ -10,8 +11,8 @@ const navItems = ['Home', 'Vault', 'About', 'Contact']
 const Navbar = () => {
     const navContainerRef = useRef(null)
     const audioElementRef = useRef(null)
-    const [isAudioPlaying, setIsAudioPlaying] = useState(true)
-    const [isIndicatorActive, setIsIndicatorActive] = useState(true)
+    const [isAudioPlaying, setIsAudioPlaying] = useState(false)
+    const [isIndicatorActive, setIsIndicatorActive] = useState(false)
 
     const [lastScrollY, setLastScrollY] = useState(0)
     const [isNavVisible, setIsNavVisible] = useState(true)
@@ -69,13 +70,16 @@ const Navbar = () => {
                 <nav className='flex size-full items-center justify-between p-3'>
                     <div className="flex items-center gap-7">
                         <img src="/img/logo_g.png" alt="logo" className='w-16' />
-                        <Button
-                        link='#dfg'
-                            id='product-button'
-                            title='products'
-                            rightIcon={<TiLocationArrow />}
-                            className='bg-blue-50 md:flex hidden items-center justify-center gap-1'
-                        />
+                        <Magnet padding={10} disabled={false}>
+                            <Button
+                                link='#dfg'
+                                id='product-button'
+                                title='products'
+                                rightIcon={<TiLocationArrow />}
+                                className='bg-blue-50 md:flex hidden items-center justify-center gap-1'
+                            />
+                        </Magnet>
+
                     </div>
                     <div className="flex h-full items-center">
                         <div className="hidden md:block">

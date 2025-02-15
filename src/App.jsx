@@ -1,26 +1,30 @@
-import React from 'react'
-import Hero from './components/Hero'
-import About from './components/About'
-import Navbar from './components/Navbar'
-import Features from './components/Features'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import SplashCursor from './components/SplashCursor'
-
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Hero from './components/Hero';
+import About from './components/About';
+import Navbar from './components/Navbar';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import SplashCursor from './components/SplashCursor';
+import Events from './components/Events';
 
 
 const App = () => {
   return (
-    <main className='relative min-h-screen w-screen overflow-x-hidden '>
-      <SplashCursor/>
-      <Navbar />
-      <Hero />
-      <About />
-      <Features />
-      <Contact />
-      <Footer />
-    </main>
-  )
+    <Router>
+      <main className='relative min-h-screen w-screen overflow-x-hidden'>
+        <SplashCursor />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </main>
+    </Router>
+  );
 }
 
-export default App
+export default App;

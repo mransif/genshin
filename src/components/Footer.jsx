@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="text-white absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2  sm:-translate-y-3/4">
                     <h1 className='text-[18vw] bg-gradient-to-r from-white to-[#565656] bg-clip-text font-circular-web tracking-tight'>AVISHKAR</h1>
                 </div>
-                <footer className='w-screen bg-violet-300 py-4 text-black h-1/4 '>
+                <footer className='w-screen bg-[#9920c9] py-4 text-black h-1/4 '>
                     <div className="container mx-auto rounded-lg flex flex-col items-center justify-between gap-4 md:flow-row">
                         <p className='text-center text-sm md:text-left'>
                             &copy; AVISHKAR 2025.
@@ -26,7 +26,7 @@ const Footer = () => {
                             ))}
                         </div>
                         <p className='text-center text-sm tracking-tight'>Disclaimer:<br />
-                            All video content on this website belongs to their respective owners. Contact us for concerns about its use.</p>
+                            All content on this website belongs to their respective owners. Contact us for concerns about its use.</p>
                         <a href="#privacy-policy" className='text-center text-sm hover:underline md:text-right'>privacy policy</a>
                     </div>
                 </footer>

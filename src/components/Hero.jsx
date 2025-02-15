@@ -36,8 +36,8 @@ const Hero = () => {
             <div id='home' className='relative h-dvh w-screen overflow-x-hidden'>
 
                 <div id='video-frame' className='relative z-10 h-dvh w-screen overflow-hidden  rounded-lg bg-blue-75'>
-                    {/* <div > */}
-                        <div style={{ width: '100%', height: 'auto', position: 'relative' }}>
+                    <div >
+                        <div style={{ width: '100%', height: 'screen', position: 'relative' }}>
                             <GridDistortion
                                 imageSrc={`/img/hero_1.png`}
                                 grid={10}
@@ -47,12 +47,8 @@ const Hero = () => {
                                 className="custom-class"
                             />
                         </div>
-
-                        {/* <div className="h-screen w-1/2 bg-slate-500 ">
-                            <img src="/img/hero_logo.png" alt="" />
-                        </div> */}
                        
-                    {/* </div> */}
+                    </div>
                     <h1 className='special-font text-7xl sm:hero-heading absolute bottom-20 right-16 sm:bottom-12 sm:right-10 text-blue-75 z-40  '>
                         <b>MUSALIAR</b>
                     </h1>

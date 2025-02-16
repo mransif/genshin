@@ -8,6 +8,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 function About() {
 
+
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top
     }, []);

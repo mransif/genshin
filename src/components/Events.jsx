@@ -3,9 +3,15 @@ import GridDistortion from './ui/GridDistortion'
 import TrueFocus from './ui/TrueFocus/TrueFocus';
 import InfiniteMenu from './ui/InfiniteMenu/InfiniteMenu'
 import { DirectionAwareHover } from "./ui/direction-aware-hover";
+import Lenis from '@studio-freight/lenis';
 
 
 const Events = () => {
+
+  useEffect(() => {
+    const lenis = new Lenis();
+    lenis.scrollTo(0, { immediate: true }); // Force scroll to top
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);

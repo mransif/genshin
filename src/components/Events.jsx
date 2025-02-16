@@ -7,9 +7,9 @@ import InfiniteMenu from './ui/InfiniteMenu/InfiniteMenu'
 
 const Events = () => {
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0); // Scroll to the top
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top
+  }, []);
 
   const items = [
     {

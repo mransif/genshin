@@ -1,21 +1,21 @@
 import React, { useEffect } from 'react'
-// import ShapeBlur from './ui/ShapeBlur'
 import GridDistortion from './ui/GridDistortion'
-import TiltedCard from './ui/TiltedCard/TiltedCard';
 import TrueFocus from './ui/TrueFocus/TrueFocus';
 import InfiniteMenu from './ui/InfiniteMenu/InfiniteMenu'
+import { DirectionAwareHover } from "./ui/direction-aware-hover";
+
 
 const Events = () => {
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to the top
+    window.scrollTo(0, 0);
   }, []);
 
   const items = [
     {
       image: '/img/p_1.png',
       link: 'https://www.instagram.com/pistonia_mcet/',
-      description: 'Pretty cool, right?'
+      description: 'Pretty cool, right? '
     },
     {
       image: '/img/p_2.png',
@@ -43,7 +43,7 @@ const Events = () => {
       description: 'Drive it, love it, live it.'
     }
   ];
-
+  
   return (
     <div className="relative w-full min-h-screen">
       {/* Hero Section with Grid Distortion */}
@@ -63,35 +63,16 @@ const Events = () => {
 
       {/* Pro Show Section */}
       <div className="flex flex-col md:flex-row justify-around items-center bg-black gap-4 px-16 py-12 ">
-        <TiltedCard
-          imageSrc="/img/8m_3.png"
-          altText="8EEN MUSIC"
-          captionText="8EEN MUSIC"
-          containerHeight="450px"
-          containerWidth="450px"
-          imageHeight="450px"
-          imageWidth="450px"
-          rotateAmplitude={12}
-          scaleOnHover={1.1}
-          showMobileWarning={false}
-          showTooltip={true}
-          displayOverlayContent={true}
-        />
+        
 
-        <TiltedCard
-          imageSrc="/img/tc_3.png"
-          altText="THAMARASSERY CHURAM"
-          captionText="THAMARASSERY CHURAM"
-          containerHeight="450px"
-          containerWidth="450px"
-          imageHeight="450px"
-          imageWidth="450px"
-          rotateAmplitude={12}
-          scaleOnHover={1.1}
-          showMobileWarning={false}
-          showTooltip={true}
-          displayOverlayContent={true}
-        />
+        <DirectionAwareHover imageUrl='/img/8m_3.png'>
+          <p className="font-bold text-xl">8EEN MUSIC</p>
+        </DirectionAwareHover>
+        <DirectionAwareHover imageUrl='/img/tc_3.png'>
+          <p className="font-bold text-xl">THAMARASSERY CHURAM</p>
+        </DirectionAwareHover>
+
+
       </div>
 
       {/* Auto Show Section */}

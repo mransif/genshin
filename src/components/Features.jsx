@@ -110,6 +110,7 @@ const Features = () => {
       </div>
 
       <HeroParallax products={products} />;
+      <div className="h-[1px] bg-purple-400 w-full"></div>
 
     </section>
   )

@@ -966,11 +966,11 @@ export default function InfiniteMenu({ items = [] }) {
               }
         `}
           >
-            {activeItem.description}
+            {activeItem.description} <br /><span className='text-sm font-light '>Drag for more.</span>
           </p>
 
           {/* Action Button */}
-          <div
+          {/* <div
             onClick={handleButtonClick}
             className={`
           absolute
@@ -980,7 +980,7 @@ export default function InfiniteMenu({ items = [] }) {
           h-[60px]
           grid
           place-items-center
-          bg-[#00ffff]
+          bg-[#b5159d47]
           border-[5px]
           border-black
           rounded-full
@@ -996,7 +996,7 @@ export default function InfiniteMenu({ items = [] }) {
             <p className="select-none relative text-[#060606] top-[2px] text-[26px]">
               &#x2197;
             </p>
-          </div>
+          </div> */}
         </>
       )}
     </div>

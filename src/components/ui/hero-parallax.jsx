@@ -65,7 +65,7 @@ export const Header = () => {
       Experience the <br /> Ultimate Fest! 
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 text-zinc-400 dark:text-neutral-200">
-      A celebration of music, dance, and tech! Get ready for thrilling competitions, and unforgettable moments.<br/>Scroll Down to Explore the Events and  <br /><span className=" text-zinc-300 font-semibold"> click to know more about our Events.</span>
+      Get ready for thrilling competitions, and unforgettable moments.<br/>Scroll Down to Explore the Events and  <br /><span className=" text-zinc-300 font-semibold"> click to know more about our Events.</span>
       </p>
     </div>)
   );

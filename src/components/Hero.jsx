@@ -4,7 +4,6 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import Features from './Features'
-import GridDistortion from './ui/GridDistortion'
 import { LampContainer } from './ui/lamp'
 import { motion } from "framer-motion";
 

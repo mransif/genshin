@@ -29,18 +29,20 @@ function About() {
 
     return (
         <div id='about' className='min-h-screen w-screen'>
-            
+
             <div className='relative mb-8 mt-36 flex flex-col items-center gap-5'>
                 <h2 className='font-general text-sm uppercase md:text-[10px]'>
-                    Welcome to teyvat
+                    avishkar
                 </h2>
                 <AnimatedTitle
-                    title="Disc<b>o</b>ver the world's larges<b>t</b> s<b>h</b>ared a<b>d</b>venture"
+                    title="A Fes<b>ival of </b>Talent, <b>Innovation & </b><b>C</b>elebration!"
                     containerClass="mt-5 !text-black text-center"
                 />
                 <div className='about-subtext'>
-                    <p>Challenge formidable foes to shape your destiny.</p>
-                    <p>Rise above the chaos, conquer the unknown, and become the hero Teyvat needs.</p>
+                    <p>Avishkar, the annual fest of Musaliar College.</p>
+                    <p>📅 Date: February 24 <br />
+                        📍 Location: Musaliar College of Engineering and Technology, Pathanamthitta. <br />
+                        Contact us to know more! 🚀</p>
                 </div>
             </div>
             <div className='h-dvh w-screen' id='clip'>

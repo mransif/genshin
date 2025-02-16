@@ -1,12 +1,18 @@
 import React from 'react'
-import Button from './Button'
-import Magnet from './Magnet'
+import { FaFacebook, FaInstagram } from 'react-icons/fa'
+
+const links = [
+    { href: 'https://www.instagram.com/avishkar_.25/', icon: <FaInstagram /> },
+    { href: 'https://www.facebook.com/avishkarthefest/', icon: <FaFacebook /> }
+]
 
 const ImageClipBox = ({ src, clipClass }) => (
     <div className={clipClass}>
         <img src={src} alt="" />
     </div>
 )
+
+
 
 const Contact = () => {
     return (
@@ -29,11 +35,14 @@ const Contact = () => {
                     />
                 </div>
                 <div className="flex flex-col items-center text-center">
-                    <p className='font-general text-[10px] uppercase'>Join us</p>
-                    <p className='special-font mt-10 w-full z-20 font-zentry text-5xl leading-[0.9] md:text-[6rem]'>Lets <b>buil</b>d the <br /> <b>n</b>ew era  <b>of</b> <br /> gaming  tog<b>e</b>ther</p>
-                    <Magnet padding={30} disabled={false}>
-                        <Button title='Contact us' containerClass='mt-10 cursor-pointer' link='https://github.com/Kenz8489' />
-                    </Magnet>
+                    <p className='special-font mt-10 w-full z-20 font-zentry text-5xl leading-[0.9] md:text-[6rem]'>Wa<b>nt</b> to know more?<br /> Con<b>tac</b>t us for <b>det</b>ails!</p>
+                    <div className="flex justify-center gap-4 md:justify-start">
+                        {links.map((link) => (
+                            <a key={link} href={link.href} target='_blank' className='text-white text-2xl mt-4 transition-colors duration-500 ease-in-out hover:text-pink-400'>
+                                {link.icon}
+                            </a>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>

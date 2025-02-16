@@ -60,14 +60,16 @@ const Hero = () => {
                                 duration: 0.8,
                                 ease: "easeInOut",
                             }}
-                            className="mt-2 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+                            className="mt-2 bg-gradient-to-br from-slate-300 to-slate-500 py-0 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
                         >
                             {/* Build lamps <br /> the right way */}
                             {/* <div className='h-2/5 w-2/5 left-0'>
                                     <img src="/img/logo1.png" alt="" />
                                 </div> */}
-                            <h1 className='special-font text-7xl sm:hero-heading  text-blue-100 '><b>AVISHKAR</b></h1>
-                            <p className='mb-5 max-w-64 font-robert-regular text-blue-100'>2025</p>
+                            <div className='-translate-y-14 md:-translate-y-0 '>
+                                <h1 className='special-font text-7xl sm:hero-heading  text-blue-100 '><b>AVISHKAR</b></h1>
+                                <p className='max-w-64 font-robert-regular text-2xl text-blue-100'>2025</p>
+                            </div>
 
                         </motion.h1>
 

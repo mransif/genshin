@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FaFacebook, FaInstagram } from 'react-icons/fa'
 
 const links = [
@@ -15,6 +15,11 @@ const ImageClipBox = ({ src, clipClass }) => (
 
 
 const Contact = () => {
+    
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top
+      }, []);
+
     return (
         <div id='contact' className='my-20 min-h-96 w-screen px-10 '>
             <div className="relative bg-black rounded-lg py-24 text-blue-50 sm:overflow-hidden">

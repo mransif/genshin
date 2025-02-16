@@ -14,6 +14,9 @@ gsap.registerPlugin(ScrollTrigger)
 
 const Hero = () => {
 
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top
+      }, []);
 
     useGSAP(() => {
         gsap.set('#video-frame', {

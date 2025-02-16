@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 // import ShapeBlur from './ui/ShapeBlur'
 import GridDistortion from './ui/GridDistortion'
 import TiltedCard from './ui/TiltedCard/TiltedCard';
 
 const Events = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top
+  }, []);
+
   return (
     <div className="relative w-full min-h-screen">
       {/* Hero Section with Grid Distortion */}
@@ -18,7 +23,7 @@ const Events = () => {
             className="w-full h-full"
           />
         </div>
-        <h1 className="relative">Welcome to the Fest</h1>
+        <h1 className="relative">Welcome to Avishkar</h1>
       </div>
 
       {/* Pro Show Section */}

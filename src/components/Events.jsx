@@ -42,12 +42,9 @@ const Events = () => {
           showMobileWarning={false}
           showTooltip={true}
           displayOverlayContent={true}
-          overlayContent={
-            <p className="text-white text-2xl md:text-3xl font-bold tracking-wide uppercase bg-black bg-opacity-50 px-4 py-2 rounded-lg shadow-lg">
-              8EEN MUSIC
-            </p>
-          }
-        /><TiltedCard
+        />
+
+        <TiltedCard
           imageSrc="/img/tc_3.png"
           altText="THAMARASSERY CHURAM"
           captionText="THAMARASSERY CHURAM"
@@ -60,11 +57,6 @@ const Events = () => {
           showMobileWarning={false}
           showTooltip={true}
           displayOverlayContent={true}
-          overlayContent={
-            <p className="text-white text-2xl md:text-3xl font-bold tracking-tight uppercase bg-black bg-opacity-50 px-4 py-2 rounded-lg shadow-lg">
-              THAMARASSERY CHURAM
-            </p>
-          }
         />
       </div>
 

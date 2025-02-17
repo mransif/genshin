@@ -53,6 +53,8 @@ const Navbar = () => {
         setIsAudioPlaying((prev) => !prev)
         setIsIndicatorActive((prev) => !prev)
     }
+    
+    
 
     useEffect(() => {
         if (audioElementRef.current) {

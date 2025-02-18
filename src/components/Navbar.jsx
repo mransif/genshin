@@ -3,10 +3,9 @@ import { LuMenu } from "react-icons/lu";
 import { useWindowScroll } from 'react-use'
 import gsap from 'gsap'
 import { useNavigate } from "react-router-dom";
-import Magnet from './Magnet';
 import Button from './Button';
 import { TiLocation } from "react-icons/ti";
-
+import { LuHeadphones, LuHeadphoneOff  } from "react-icons/lu";
 
 
 
@@ -53,8 +52,8 @@ const Navbar = () => {
         setIsAudioPlaying((prev) => !prev)
         setIsIndicatorActive((prev) => !prev)
     }
-    
-    
+
+
 
     useEffect(() => {
         if (audioElementRef.current) {
@@ -98,15 +97,13 @@ const Navbar = () => {
                 <nav className='flex size-full items-center justify-between p-3'>
                     <div className="flex items-center gap-7">
                         <img src="/img/logo1.png" alt="logo" className='w-16' />
-                        <Magnet padding={10} disabled={false}>
-                            <Button
-                                link='https://maps.app.goo.gl/2s1ABh1zeFt1ivPg7'
-                                id='product-button'
-                                title='Join Us '
-                                rightIcon={<TiLocation />}
-                                className='bg-blue-50 md:flex hidden items-center justify-center gap-1'
-                            />
-                        </Magnet>
+                        <Button
+                            link='https://maps.app.goo.gl/2s1ABh1zeFt1ivPg7'
+                            id='product-button'
+                            title='Join Us '
+                            rightIcon={<TiLocation />}
+                            className='bg-blue-50 md:flex hidden items-center justify-center gap-1'
+                        />
 
                     </div>
                     <div className="flex h-full items-center ">
@@ -143,9 +140,8 @@ const Navbar = () => {
                             className='lg:ml-7 md:ml-7 lg:mr-0 mr-7 flex items-center space-x-0.5'
                         >
                             <audio ref={audioElementRef} className='hidden' src='/audio/loop.mp3' loop />
-                            {[1, 2, 3, 4].map((bar) => (
-                                <div key={bar} className={`indicator-line ${isIndicatorActive ? 'active' : ''}`} style={{ animationDelay: `${bar * 0.1}s` }} />
-                            ))}
+                            {isAudioPlaying ? <LuHeadphones className="text-gray-300" /> : <LuHeadphoneOff className="text-gray-500" />}
+
                         </button>
 
                         <div ref={dropdownRef} className="relative block md:hidden mr-3">

@@ -39,14 +39,13 @@ function About() {
                     avishkar
                 </h2>
                 <AnimatedTitle
-                    title="A Fes<b>ival of </b>Talent, <b>Innovation & </b><b>C</b>elebration!"
+                    title="A Fes<b>tival of </b>Talent, <b>Innovation & </b><b>C</b>elebration!"
                     containerClass="mt-5 !text-black text-center"
                 />
                 <div className='about-subtext'>
                     <p>Avishkar, the annual fest of Musaliar College.</p>
-                    <p>📅 Date: February 24 <br />
-                        📍 Location: Musaliar College of Engineering and Technology, Pathanamthitta. <br />
-                        Contact us to know more! 🚀</p>
+                    <p>📅 Date: February 24</p>
+                    <img src="/img/mck.png" alt="" />
                 </div>
             </div>
             <div className='h-dvh w-screen' id='clip'>

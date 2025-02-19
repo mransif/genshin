@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import Button from './Button';
 import { TiLocation } from "react-icons/ti";
 import { LuHeadphones, LuHeadphoneOff  } from "react-icons/lu";
+import { Link } from 'react-router-dom';
 
 
 
@@ -97,11 +98,12 @@ const Navbar = () => {
                 <nav className='flex size-full items-center justify-between p-3'>
                     <div className="flex items-center gap-7">
                         <img src="/img/logo1.png" alt="logo" className='w-16' />
+                        
                         <Button
-                            link='#'
+                            link='main-event'
                             id='product-button'
-                            title='Join Us '
-                            rightIcon={<TiLocation />}
+                            title='Register for Events '
+                            // rightIcon={}
                             className='bg-blue-50 md:flex hidden items-center justify-center gap-1'
                         />
 

@@ -9,6 +9,7 @@ import SplashCursor from './components/SplashCursor';
 import Events from './components/Events';
 import Lenis from "@studio-freight/lenis";
 import ScrollToTop from "./components/ScrollToTop";
+import MainEvent from './components/MainEvent';
 
 const App = () => {
 
@@ -43,6 +44,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/main-event" element={<MainEvent />} />
         </Routes>
         <Footer />
       </main>

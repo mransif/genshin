@@ -43,11 +43,11 @@ const Hero = () => {
         <>
             <div id='home' className='relative h-screen w-screen overflow-x-hidden bg-[#020617]'>
 
-                <div id='' className='relative z-10 h-screen w-screen overflow-hidden  rounded-lg bg-blue-75'>
+                <div id='' className='relative z-10 h-screen w-screen overflow-hidden  rounded-none bg-blue-75'>
                     
                     <LampContainer >
                         <motion.h1
-                            initial={{ opacity: 0.5, y: 100 }}
+                            initial={{ opacity: 0.5, y: 5 }}
                             whileInView={{ opacity: 1, y: -85 }}
                             transition={{
                                 delay: 0.3,

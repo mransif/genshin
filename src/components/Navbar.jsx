@@ -98,7 +98,7 @@ const Navbar = () => {
                     <div className="flex items-center gap-7">
                         <img src="/img/logo1.png" alt="logo" className='w-16' />
                         <Button
-                            link='https://maps.app.goo.gl/2s1ABh1zeFt1ivPg7'
+                            link='#'
                             id='product-button'
                             title='Join Us '
                             rightIcon={<TiLocation />}

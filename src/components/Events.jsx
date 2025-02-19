@@ -203,10 +203,10 @@ const Events = () => {
           {[
             {
               title: 'MCA', events: ['Capture the Flag', 'Code Relay', 'Tech Escape Room', 'Spot Mobile Photography'], link: [
-                '#',
-                '#',
-                '#',
-                '#',
+                'https://docs.google.com/forms/d/e/1FAIpQLScbnYy_jRxDch8rywn5jpzLClp2LMm-_kSIOmc7doqMigakbQ/viewform',
+                'https://docs.google.com/forms/d/e/1FAIpQLSeA4P7eKqUS21PFS3lM3Tj_r2-ungszx7yZd_SpOQkKxgE-zg/viewform',
+                'https://docs.google.com/forms/d/e/1FAIpQLSdZqlQY425AGemG-9JJtCRfTxT0Py5ZsLg38GEQ9HTGuAFS_g/viewform',
+                'https://docs.google.com/forms/d/e/1FAIpQLSdLQpSpZWf5mDnQ1pRonJCSMAPhivOkeu9TphaYUX-nIEnWTg/viewform',
               ],
             },
             {
@@ -243,9 +243,9 @@ const Events = () => {
             },
             {
               title: 'Civil', events: ['Bridge It Up', 'Movie Truffle', 'House of Cup', 'Technical Quiz'], link: [
-                '#',
-                '#',
-                '#',
+                'https://docs.google.com/forms/d/e/1FAIpQLSfBKyP16Fm7Gqd9N2WxZ-Cb6mGK-oM99uj94c17TfeuoKXfAA/viewform',
+                'https://docs.google.com/forms/d/e/1FAIpQLSfBKyP16Fm7Gqd9N2WxZ-Cb6mGK-oM99uj94c17TfeuoKXfAA/viewform',
+                'https://docs.google.com/forms/d/e/1FAIpQLSfBKyP16Fm7Gqd9N2WxZ-Cb6mGK-oM99uj94c17TfeuoKXfAA/viewform',
                 'https://docs.google.com/forms/d/e/1FAIpQLSfBKyP16Fm7Gqd9N2WxZ-Cb6mGK-oM99uj94c17TfeuoKXfAA/viewform',
               ],
             }

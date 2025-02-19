@@ -41,9 +41,9 @@ const Hero = () => {
 
     return (
         <>
-            <div id='home' className='relative h-dvh w-screen overflow-x-hidden'>
+            <div id='home' className='relative h-screen w-screen overflow-x-hidden bg-[#020617]'>
 
-                <div id='' className='relative z-10 h-dvh w-screen overflow-hidden  rounded-lg bg-blue-75'>
+                <div id='' className='relative z-10 h-screen w-screen overflow-hidden  rounded-lg bg-blue-75'>
                     
                     <LampContainer >
                         <motion.h1

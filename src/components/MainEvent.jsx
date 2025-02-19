@@ -1,9 +1,4 @@
 import React from 'react'
-import GridDistortion from './ui/GridDistortion'
-import TrueFocus from './ui/TrueFocus/TrueFocus';
-import InfiniteMenu from './ui/InfiniteMenu/InfiniteMenu'
-import { DirectionAwareHover } from "./ui/direction-aware-hover";
-import Lenis from '@studio-freight/lenis';
 import { LayoutGrid } from "./ui/layout-grid";
 import Button from './Button';
 import { FaLocationArrow } from "react-icons/fa";
@@ -53,7 +48,7 @@ const MainEvent = () => {
         {
             id: 1,
             content: <SkeletonOne />,
-            name: "Mr and Mrs Avishkar",
+            name: "Mr and Ms Avishkar",
             link: "https://docs.google.com/forms/d/e/1FAIpQLSeEreiGa5tj_z9kmo-aq-paeS7EKL6MuwaVpiEHcMb0Iyk6YQ/viewform?usp=header",
             className: "md:col-span-2",
             thumbnail:

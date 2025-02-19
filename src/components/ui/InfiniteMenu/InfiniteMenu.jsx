@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { mat4, quat, vec2, vec3 } from 'gl-matrix';
+import GradientText from '../GradientText/GradientText'
 
 const discVertShaderSource = `#version 300 es
 
@@ -966,7 +967,19 @@ export default function InfiniteMenu({ items = [] }) {
               }
         `}
           >
-            {activeItem.description} <br /><span className='text-sm font-light '>Drag for more.</span>
+            {activeItem.description} <br />
+            {/* <span className='text-md font- '>Drag for more.</span> */}
+            <GradientText
+              colors={[
+                "#4079ff", "#a040ff", "#4079ff", "#a040ff", "#4079ff", "#a040ff"
+              ]}
+
+              animationSpeed={20}
+              showBorder={false}
+              className="custom-class font-bold"
+            >
+              Drag for more.
+            </GradientText>
           </p>
 
           {/* Action Button */}

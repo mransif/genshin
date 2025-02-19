@@ -4,9 +4,7 @@ import TrueFocus from './ui/TrueFocus/TrueFocus';
 import InfiniteMenu from './ui/InfiniteMenu/InfiniteMenu'
 import { DirectionAwareHover } from "./ui/direction-aware-hover";
 import Lenis from '@studio-freight/lenis';
-import { LayoutGrid } from "./ui/layout-grid";
-import Button from './Button';
-import { FaLocationArrow } from "react-icons/fa";
+import MainEvent from './MainEvent';
 
 
 
@@ -135,59 +133,59 @@ const Events = () => {
 
 
   return (
-    <div className="relative w-full min-h-screen">
-      {/* Hero Section with Grid Distortion */}
-      <div className="h-screen relative flex items-center justify-center text-white text-4xl font-bold">
-        <div className="absolute inset-0 -z-10">
-          <GridDistortion
-            imageSrc="/img/eagle.png"
-            grid={10}
-            mouse={0.1}
-            strength={0.15}
-            relaxation={0.9}
-            className="w-full h-full"
-          />
-        </div>
-        <h1 className="relative">Welcome to Avishkar</h1>
-      </div>
-
-      {/* Pro Show Section */}
-      <div className="flex flex-col md:flex-row justify-around items-center bg-black gap-4 px-16 py-12 ">
-
-
-        <DirectionAwareHover imageUrl='/img/8m_3.png'>
-          <p className="font-bold text-xl">8EEN MUSIC</p>
-        </DirectionAwareHover>
-        <DirectionAwareHover imageUrl='/img/tc_3.png'>
-          <p className="font-bold text-xl">THAMARASSERY CHURAM</p>
-        </DirectionAwareHover>
-
-
-      </div>
-
-      {/* Auto Show Section */}
-      <div className="h-screen flex flex-col items-center justify-center bg-black text-white text-5xl font-bold">
-
-        <div className='mb-4'>
-          <TrueFocus
-            sentence="Pistonia '25"
-            manualMode={false}
-            blurAmount={9}
-            borderColor="purple"
-            animationDuration={0.6}
-            pauseBetweenAnimations={1}
-          />
+    <>
+      <div className="relative w-full min-h-screen">
+        {/* Hero Section with Grid Distortion */}
+        <div className="h-screen relative flex items-center justify-center text-white text-4xl font-bold">
+          <div className="absolute inset-0 -z-10">
+            <GridDistortion
+              imageSrc="/img/eagle.png"
+              grid={10}
+              mouse={0.1}
+              strength={0.15}
+              relaxation={0.9}
+              className="w-full h-full"
+            />
+          </div>
+          <h1 className="relative">Welcome to Avishkar</h1>
         </div>
 
-        <div style={{ height: '500px', position: 'relative' }} className='border-[1px] rounded-md border-zinc-700 mx-2'>
-          <InfiniteMenu className='rounded-lg' items={items} />
+        {/* Pro Show Section */}
+        <div className="flex flex-col md:flex-row justify-around items-center bg-black gap-4 px-16 py-12 ">
+
+
+          <DirectionAwareHover imageUrl='/img/8m_3.png'>
+            <p className="font-bold text-xl">8EEN MUSIC</p>
+          </DirectionAwareHover>
+          <DirectionAwareHover imageUrl='/img/tc_3.png'>
+            <p className="font-bold text-xl">THAMARASSERY CHURAM</p>
+          </DirectionAwareHover>
+
+
         </div>
 
+        {/* Auto Show Section */}
+        <div className="h-screen flex flex-col items-center justify-center bg-black text-white text-5xl font-bold">
+
+          <div className='mb-4'>
+            <TrueFocus
+              sentence="Pistonia '25"
+              manualMode={false}
+              blurAmount={9}
+              borderColor="purple"
+              animationDuration={0.6}
+              pauseBetweenAnimations={1}
+            />
+          </div>
+
+          <div style={{ height: '500px', position: 'relative' }} className='border-[1px] rounded-md border-zinc-700 mx-2'>
+            <InfiniteMenu className='rounded-lg' items={items} />
+          </div>
+
+        </div>
       </div>
-
-      
-    </div>
-
+      <MainEvent/>
+    </>
 
   )
 }

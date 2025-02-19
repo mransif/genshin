@@ -68,7 +68,7 @@ const Hero = () => {
 
                    
                     <h1 className='flex flex-col special-font text-7xl sm:hero-heading absolute bottom-20 right-16 sm:bottom-12 sm:right-10 text-blue-75 z-40  '>
-                        <b>MUSALIAR </b><span className='text-base'>Presents</span>
+                        <b>MUSALIAR </b><span className='text-base'>College of Engineering & Technology, <br />Pathanamthitta</span>
                     </h1>
                     <div className='absolute left-0 top-0 z-40 size-full '>
                         <div className='mt-20 px-[15%] py-56 md:px-5 '>

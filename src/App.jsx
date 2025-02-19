@@ -36,7 +36,7 @@ const App = () => {
     <Router>
       <ScrollToTop />
       <main className='relative min-h-screen w-screen overflow-x-hidden'>
-        <SplashCursor />
+        {/* <SplashCursor /> */}
         <Navbar />
         <Routes>
           <Route path="/" element={<Hero />} />

@@ -246,7 +246,7 @@ const Events = () => {
                 '#',
                 '#',
                 '#',
-                '#',
+                'https://docs.google.com/forms/d/e/1FAIpQLSfBKyP16Fm7Gqd9N2WxZ-Cb6mGK-oM99uj94c17TfeuoKXfAA/viewform',
               ],
             }
           ].map((dept, index) => (

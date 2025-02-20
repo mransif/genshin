@@ -44,21 +44,27 @@ const Footer = () => {
 
 
 
-                <footer className='w-screen bg-[#a88acc] py-4 text-black h-1/4 '>
+                <footer className='w-screen bg-[#a88acc] py-4 text-black h-auto '>
                     <div className="container mx-auto rounded-lg flex flex-col items-center justify-between gap-4 md:flow-row">
                         <p className='text-center text-sm md:text-left'>
                             &copy; AVISHKAR 2025.
                         </p>
                         <div className="flex justify-center gap-4 md:justify-start">
                             {links.map((link) => (
-                                <a key={link} href={link.href} target='_blank' className='text-black transition-colors duration-500 ease-in-out hover:text-white'>
+                                <a key={link} href={link.href} target='_blank' className='text-black transition-colors duration-500 ease-in-out hover:text-white '>
                                     {link.icon}
                                 </a>
                             ))}
                         </div>
                         <p className='text-center text-sm tracking-tight'>Disclaimer:<br />
                             All content on this website belongs to their respective owners. Contact us for concerns about its use.</p>
-                        <a href="#privacy-policy" className='text-center text-sm hover:underline md:text-right'>privacy policy</a>
+                        <div className="text-center text-sm space-y-1">
+                            <p className="font-semibold">Developed by:</p>
+                            <p>Ansif Muhammed & Sreehari Suresh</p>
+                            <p>Contact: </p>
+                            <a href="mailto:ansifpta2003@gmail.com" className="text-blue-900 underline cursor-pointer ">ansifpta2003@gmail.com</a> <>|{" "}</>
+                            <a href="mailto:sreehari200411@gmail.com" className="text-blue-900 underline cursor-pointer">sreehari200411@gmail.com</a>
+                        </div>
                     </div>
                 </footer>
             </div>

@@ -45,7 +45,7 @@ function About() {
                 <div className='about-subtext'>
                     <p>Avishkar, the annual fest of Musaliar College.</p>
                     <p>📅 Date: February 24</p>
-                    <img src="/img/mck.png" alt="" />
+                    <img src="/img/mckpta.png" alt="" />
                 </div>
             </div>
             <div className='h-dvh w-screen' id='clip'>

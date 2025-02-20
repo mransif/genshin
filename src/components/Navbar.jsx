@@ -5,7 +5,7 @@ import gsap from 'gsap'
 import { useNavigate } from "react-router-dom";
 import Button from './Button';
 import { TiLocation } from "react-icons/ti";
-import { LuHeadphones, LuHeadphoneOff  } from "react-icons/lu";
+import { LuHeadphones, LuHeadphoneOff } from "react-icons/lu";
 import { Link } from 'react-router-dom';
 
 
@@ -97,8 +97,10 @@ const Navbar = () => {
             <header className='absolute top-1/2 w-full -translate-y-1/2 '>
                 <nav className='flex size-full items-center justify-between p-3'>
                     <div className="flex items-center gap-7">
-                        <img src="/img/logo1.png" alt="logo" className='w-16' />
-                        
+                        <Link to='/'>
+                            <img src="/img/logo1.png" alt="logo" className='w-16' />
+                        </Link>
+
                         <Button
                             link='main-event'
                             id='product-button'

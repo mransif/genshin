@@ -56,15 +56,9 @@ const Footer = () => {
                                 </a>
                             ))}
                         </div>
-                        <p className='text-center text-sm tracking-tight'>Disclaimer:<br />
+                        <p className='text-center text-sm tracking-tight px-7'>Disclaimer:<br />
                             All content on this website belongs to their respective owners. Contact us for concerns about its use.</p>
-                        <div className="text-center text-sm space-y-1">
-                            <p className="font-semibold">Developed by:</p>
-                            <p>Ansif Muhammed & Sreehari Suresh</p>
-                            <p>Contact: </p>
-                            <a href="mailto:ansifpta2003@gmail.com" className="text-blue-900 underline cursor-pointer ">ansifpta2003@gmail.com</a> <>|{" "}</>
-                            <a href="mailto:sreehari200411@gmail.com" className="text-blue-900 underline cursor-pointer">sreehari200411@gmail.com</a>
-                        </div>
+                        <a href='/credits' className='cursor-pointer underline'>Credits</a>
                     </div>
                 </footer>
             </div>

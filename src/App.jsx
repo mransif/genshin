@@ -5,11 +5,11 @@ import About from './components/About';
 import Navbar from './components/Navbar';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import SplashCursor from './components/SplashCursor';
 import Events from './components/Events';
 import Lenis from "@studio-freight/lenis";
 import ScrollToTop from "./components/ScrollToTop";
 import MainEvent from './components/MainEvent';
+import Credits from './components/Credits';
 
 const App = () => {
 
@@ -45,6 +45,7 @@ const App = () => {
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/main-event" element={<MainEvent />} />
+          <Route path="/credits" element={<Credits />} />
         </Routes>
         <Footer />
       </main>

@@ -2,6 +2,8 @@ import React from 'react'
 import { LayoutGrid } from "./ui/layout-grid";
 import Button from './Button';
 import { FaLocationArrow } from "react-icons/fa";
+import ScrollVelocity from './ui/ScrollVelocity/ScrollVelocity';
+
 
 const MainEvent = () => {
 
@@ -93,12 +95,15 @@ const MainEvent = () => {
                 <h2 className="text-3xl font-bold">Main Events</h2>
                 <p className="text-md font-light tracking-tight">click to register</p>
 
-
                 <div className="h-screen  w-full">
                     <LayoutGrid cards={cards} />
                 </div>
-
             </div>
+                {/* <ScrollVelocity
+                    texts={['Avinash :  ●', 'Manju miss :  ●']}
+                    velocity={10}
+                    className="text-xl"
+                /> */}
 
             {/* Competitions by Department */}
             <div className="px-6 py-12">

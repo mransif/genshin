@@ -40,7 +40,7 @@ const transformStyles = [
 
 const Footer = () => {
     return (
-        <div className="h-screen relative" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }}>
+        <div className="h-screen  relative" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }}>
             <div className='h-[100%] fixed w-full bottom-0 flex items-end bg-black '>
 
                 <div className='absolute flex m-0 md:m-10 flex-col md:flex-row w-screen h-2/3 items-center justify-around px-6 md:px-14 gap-y-4 md:gap-y-0 top-0 '>
@@ -59,7 +59,7 @@ const Footer = () => {
                         </p>
                     </div> */}
 
-                    <div className="flex justify-center items-center h-[40rem] flex-col px-4  ">
+                    <div className="flex justify-center items-center h-2/3 flex-col px-4  ">
 
                         <div className="text-white p-4 mt-4 font-bold text-2xl md:text-4xl text-center">
                             <h1>Sponsorship</h1>

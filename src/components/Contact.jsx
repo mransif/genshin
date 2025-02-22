@@ -15,10 +15,10 @@ const ImageClipBox = ({ src, clipClass }) => (
 
 
 const Contact = () => {
-    
+
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top
-      }, []);
+    }, []);
 
     return (
         <div id='contact' className='my-20 min-h-96 w-screen px-10 '>
@@ -40,10 +40,27 @@ const Contact = () => {
                     />
                 </div>
                 <div className="flex flex-col items-center text-center">
-                    <p className='special-font mt-10 w-full z-20 font-zentry text-5xl leading-[0.9] md:text-[6rem]'>Wa<b>nt</b> to know more?<br /> Con<b>tac</b>t us for <b>det</b>ails!</p>
-                    <div className="flex justify-center gap-4 md:justify-start">
+                    <p className='special-font mt-10 w-full z-20 font-zentry text-5xl leading-[0.9] md:text-[6rem]'>
+                        Wa<b>nt</b> to know more?<br /> Con<b>tac</b>t us for <b>det</b>ails!
+                    </p>
+
+                    {/* Program Convener Details */}
+                    <div className="mt-6 text-lg text-white">
+                        <p className="font-semibold">Program Convener</p>
+                        <p className="text-xl">Ms Manju R</p> {/* Replace with actual name */}
+                        <p className="text-lg">+91 99610 58429</p> {/* Replace with actual number */}
+                    </div>
+                    
+                    <div className="mt-6 text-lg text-white">
+                        <p className="font-semibold">Program Coordinator</p>
+                        <p className="text-xl">P Avinash K</p> {/* Replace with actual name */}
+                        <p className="text-lg">+91 73062 09797</p> {/* Replace with actual number */}
+                    </div>
+
+                    {/* Social Media Links */}
+                    <div className="flex justify-center gap-4 md:justify-start mt-4">
                         {links.map((link) => (
-                            <a key={link} href={link.href} target='_blank' className='text-white text-2xl mt-4 transition-colors duration-500 ease-in-out hover:text-pink-400'>
+                            <a key={link.href} href={link.href} target='_blank' className='text-white text-2xl transition-colors duration-500 ease-in-out hover:text-pink-400'>
                                 {link.icon}
                             </a>
                         ))}

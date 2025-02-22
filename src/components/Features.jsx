@@ -103,32 +103,34 @@ export const products = [
 
 const Features = () => {
   return (
-    <section className='bg-black pb-2'>
+    <>
+      <section className='bg-black pb-2'>
 
-      <div style={{ height: '600px', position: 'relative' }}>
-        <CircularGallery bend={20} textColor="#ffffff" borderRadius={0.05} />
-      </div>
+        <div style={{ height: '600px', position: 'relative' }}>
+          <CircularGallery bend={20} textColor="#ffffff" borderRadius={0.05} />
+        </div>
 
-      <div className='flex flex-col justify-center gap-4 md:justify-start mt-4 w-full bg-black py-6'>
-        <div className="p-4  text-white rounded-lg shadow-md max-w-md h-auto mx-auto">
-          <div className="text-center mt-4">
-            <p className="text-lg font-semibold">Program Convener</p>
-            <p className="text-xl font-bold">Manju R</p>
-            <p className="text-md text-gray-400">+91 99610 58429</p>
-          </div>
-          <hr className="border-gray-700 my-2" />
-          <div className="text-center mt-4">
-            <p className="text-lg font-semibold">Program Coordinator</p>
-            <p className="text-xl font-bold">P Avinash K</p>
-            <p className="text-md text-gray-400">+91 73062 09797</p>
+        <div className='flex flex-col justify-center gap-4 md:justify-start mt-4 w-full bg-black py-6'>
+          <div className="p-4  text-white rounded-lg shadow-md max-w-md h-auto mx-auto">
+            <div className="text-center mt-4">
+              <p className="text-lg font-semibold">Program Convener</p>
+              <p className="text-xl font-bold">Manju R</p>
+              <p className="text-md text-gray-400">+91 99610 58429</p>
+            </div>
+            <hr className="border-gray-700 my-2" />
+            <div className="text-center mt-4">
+              <p className="text-lg font-semibold">Program Coordinator</p>
+              <p className="text-xl font-bold">P Avinash K</p>
+              <p className="text-md text-gray-400">+91 73062 09797</p>
+            </div>
           </div>
         </div>
-      </div>
+        <HeroParallax products={products} />;
+        <div className="h-[1px] bg-purple-400 w-full"></div>
+      </section>
 
-      <HeroParallax products={products} />;
-      <div className="h-[1px] bg-purple-400 w-full"></div>
 
-    </section>
+    </>
   )
 }
 

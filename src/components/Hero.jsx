@@ -13,12 +13,12 @@ gsap.registerPlugin(ScrollTrigger)
 
 const Hero = () => {
 
-    
+
 
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top
-        
-      }, []);
+
+    }, []);
 
     // useGSAP(() => {
     //     gsap.set('#video-frame', {
@@ -44,7 +44,7 @@ const Hero = () => {
             <div id='home' className='relative h-screen w-screen overflow-x-hidden bg-[#020617]'>
 
                 <div id='' className='relative z-10 h-screen w-screen overflow-hidden  rounded-none bg-blue-75'>
-                    
+
                     <LampContainer >
                         <motion.h1
                             initial={{ opacity: 0.5, y: 5 }}
@@ -56,7 +56,7 @@ const Hero = () => {
                             }}
                             className="mt-2 bg-gradient-to-br from-slate-300 to-slate-500 py-0 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
                         >
-                           
+
                             <div className='-translate-y-14 md:-translate-y-0 '>
                                 <h1 className='special-font text-7xl sm:hero-heading  text-blue-100 '><b>AVISHKAR</b></h1>
                                 <p className='max-w-64 font-robert-regular text-2xl text-blue-100'>2025</p>
@@ -66,13 +66,13 @@ const Hero = () => {
 
                     </LampContainer>
 
-                   
+
                     <h1 className='flex flex-col special-font text-7xl sm:hero-heading absolute bottom-20 right-16 sm:bottom-12 sm:right-10 text-blue-75 z-40  '>
                         <b>MUSALIAR </b><span className='text-base'>College of Engineering & Technology, <br />Pathanamthitta</span>
                     </h1>
                     <div className='absolute left-0 top-0 z-40 size-full '>
                         <div className='mt-20 px-[15%] py-56 md:px-5 '>
-                           
+
                         </div>
                     </div>
                 </div>
@@ -80,6 +80,7 @@ const Hero = () => {
                     <b>MUSALIAR</b><span className='text-base'>Presents</span>
                 </h1> */}
             </div>
+
             <Features />
         </>
     )

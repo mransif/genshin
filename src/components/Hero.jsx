@@ -41,7 +41,7 @@ const Hero = () => {
                             className="mt-2 bg-gradient-to-br from-slate-300 to-slate-500 py-0 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
                         >
 
-                            <div className='-translate-y-14 md:-translate-y-0 '>
+                            <div className='-translate-y-14 md:translate-y-20'>
                                 <h1 className='special-font text-7xl sm:hero-heading  text-blue-100 '><b>AVISHKAR</b></h1>
                                 <p className='max-w-64 font-robert-regular text-2xl text-blue-100'>2025</p>
                             </div>

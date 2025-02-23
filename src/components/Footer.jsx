@@ -28,6 +28,7 @@ const images1 = [
     "/img/ads/wem1.jpg",
 ];
 
+
 const transformStyles = [
     "rotate(5deg) translate(-150px)",
     "rotate(0deg) translate(-70px)",
@@ -59,7 +60,7 @@ const Footer = () => {
                         </p>
                     </div> */}
 
-                    <div className="flex justify-center items-center h-2/3 flex-col px-4  ">
+                    <div className="flex justify-center items-center h-4/5 flex-col px-4  ">
 
                         <div className="text-white p-4 mt-4 font-bold text-2xl md:text-4xl text-center">
                             <h1>Sponsorship</h1>
@@ -86,14 +87,24 @@ const Footer = () => {
                             transformStyles={transformStyles}
                             enableHover={true}
                         />
-                        <p className='text-white font-semibold text-center'>Thanks For your Support.</p>
-                    </div>
+                        
+                        <div className="flex justify-center items-center gap-4 md:justify-between w-full md:w-3/4  ">
+                            <img
+                                src="/img/ads/square1.jpg"
+                                alt="Ad 1"
+                                className="max-w-[65px] md:max-w-[90px] lg:max-w-[100px]"
+                            />
+                            <img
+                                src="/img/ads/square2.png"
+                                alt="Ad 2"
+                                className="w-full max-w-[200px] md:max-w-[320px] lg:max-w-[350px] md:w-auto transition-transform duration-300 hover:scale-105 cursor-pointer"
+                            />
+                        </div>
 
-                    <img
-                        src="/img/logo1.png"
-                        alt="Logo"
-                        className='order-2 md:order-none mx-auto w-full max-w-[105px] md:max-w-[300px] lg:max-w-[250px] md:w-auto transition-all duration-300 hover:scale-105 cursor-pointer'
-                    />
+                    </div>
+                    <p className='text-white font-semibold text-center'>Thanks For your Support.</p>
+
+
                 </div>
 
 

@@ -20,23 +20,7 @@ const Hero = () => {
 
     }, []);
 
-    // useGSAP(() => {
-    //     gsap.set('#video-frame', {
-    //         clipPath: 'polygon(10% 10%, 80% 20%, 90% 80%, 1% 99%)',
-    //         borderRadius: '0 0 35% / 39%'
-    //     })
-    //     gsap.from('#video-frame', {
-    //         clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
-    //         borderRadius: '0 0 0 0',
-    //         ease: 'power1.inOut',
-    //         scrollTrigger: {
-    //             trigger: '#video-frame',
-    //             start: 'center center',
-    //             end: 'bottom center',
-    //             scrub: true,
-    //         }
-    //     })
-    // })
+ 
 
 
     return (

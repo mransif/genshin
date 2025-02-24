@@ -46,20 +46,6 @@ const Footer = () => {
 
                 <div className='absolute flex m-0 md:m-10 flex-col md:flex-row w-screen h-2/3 items-center justify-around px-6 md:px-14 gap-y-4 md:gap-y-0 top-0 '>
 
-
-                    {/* <div className="flex justify-center items-center h-[40rem] flex-col px-4">
-                        <p className="text-neutral-500 dark:text-neutral-400 text-xl md:text-3xl max-w-3xl mx-auto">
-                            Join us at{" "}
-                            <LinkPreview
-                                url="https://maps.app.goo.gl/2s1ABh1zeFt1ivPg7"
-                                className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500"
-                            >
-                                Musaliar
-                            </LinkPreview>{" "}
-                            on February 24 <br />—the name itself leads you to the location!
-                        </p>
-                    </div> */}
-
                     <div className="flex justify-center items-center h-4/5 flex-col px-4  ">
 
                         <div className="text-white p-4 mt-4 font-bold text-2xl md:text-4xl text-center">
@@ -76,6 +62,7 @@ const Footer = () => {
                             transformStyles={transformStyles}
                             enableHover={true}
                         />
+                        <br />
                         <BounceCards
                             className="custom-bounceCards "
                             images={images1}
@@ -87,8 +74,8 @@ const Footer = () => {
                             transformStyles={transformStyles}
                             enableHover={true}
                         />
-                        
-                        <div className="flex justify-center items-center gap-4 md:justify-between w-full md:w-3/4  ">
+
+                        <div className="flex justify-center items-center gap-4 md:justify-between w-full md:w-3/4 my-4 ">
                             <img
                                 src="/img/ads/square1.jpg"
                                 alt="Ad 1"
@@ -100,6 +87,18 @@ const Footer = () => {
                                 className="w-full max-w-[200px] md:max-w-[320px] lg:max-w-[350px] md:w-auto transition-transform duration-300 hover:scale-105 cursor-pointer"
                             />
                         </div>
+                        <div className="flex justify-center items-center gap-4 md:justify-between w-full md:w-3/4 ">
+                            <img
+                                src="/img/ads/m1.png"
+                                alt="Ad 1"
+                                className="w-full max-w-[150px] rounded-sm md:max-w-[320px] lg:max-w-[350px] md:w-auto transition-transform duration-300 hover:scale-105 cursor-pointer"
+                            />
+                            <img
+                                src="/img/ads/m2.png"
+                                alt="Ad 2"
+                                className="max-w-[95px] md:max-w-[90px] rounded-sm lg:max-w-[100px]"
+                            />
+                        </div>
 
                     </div>
                     <p className='text-white font-semibold text-center'>Thanks For your Support.</p>
@@ -109,8 +108,8 @@ const Footer = () => {
 
 
 
-                <footer className='w-screen bg-[#a88acc] py-4 text-black h-auto '>
-                    <div className="container mx-auto rounded-lg flex flex-col items-center justify-between gap-4 md:flow-row">
+                <footer className='w-screen bg-[#a88acc] py-2 text-black h-auto '>
+                    <div className="container mx-auto rounded-lg flex flex-col items-center justify-between gap-2 md:flow-row">
                         <p className='text-center text-sm md:text-left'>
                             &copy; AVISHKAR 2025.
                         </p>

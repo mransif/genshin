@@ -42,6 +42,8 @@ src/
 ├── pages/             # Main views (Home, Characters, Banners)
 └── styles/            # Tailwind config and custom styles
 
-📜 License
+
+```
+## 📜 License
 This is a fan project and is not affiliated with HoYoverse.
 All rights to Genshin Impact assets belong to their respective owners.
